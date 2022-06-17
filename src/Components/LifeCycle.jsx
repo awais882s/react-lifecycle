@@ -24,7 +24,7 @@ export default class MethodsInClass extends Component {
   render() {
     console.log("render function");
     const { date } = this.state;
-    return <div>Text In Render component{date}</div>;
+    return <div>Text In Render component {date}</div>;
   }
 }
 
