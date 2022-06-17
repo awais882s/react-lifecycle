@@ -22,7 +22,6 @@ export default class MethodsInClass extends Component {
 
   }
 
-
   render() {
     console.log("render function");
     const { date } = this.state;
