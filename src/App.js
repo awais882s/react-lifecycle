@@ -4,5 +4,4 @@ function App() {
     <LifeCycle/>
   </div>;
 }
-
 export default App;
