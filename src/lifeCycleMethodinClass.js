@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 
 export default class MethodsInClass extends Component {
-<<<<<<< HEAD
   constructor(props) {
     super(props);
     console.log("constructor");
@@ -23,13 +22,4 @@ export default class MethodsInClass extends Component {
     const { date } = this.state;
     return <div>Text In Render component{date}</div>;
   }
-=======
-    render() {
-        return (
-            <div>
-                Text In component
-            </div>
-        )
-    }
->>>>>>> parent of 3932c77 (components)
 }
