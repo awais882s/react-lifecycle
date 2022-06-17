@@ -9,7 +9,7 @@ export default class MethodsInClass extends Component {
     };
   }
   componentWillMount() {
-    console.log("componentWillMount");
+    console.log("componentWillMount function");
   }
   componentDidMount() {
     console.log("componentDidMount function");
