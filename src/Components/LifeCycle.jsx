@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
 export default class MethodsInClass extends Component {
   constructor(props) {
@@ -23,3 +23,10 @@ export default class MethodsInClass extends Component {
     return <div>Text In Render component{date}</div>;
   }
 }
+
+// constructor
+// Componentwillmount
+// render
+// componentsDidUpdate
+// if state or props updating, methods will re render
+// render
