@@ -3,7 +3,7 @@ import React, { Component } from "react";
 export default class MethodsInClass extends Component {
   constructor(props) {
     super(props);
-    console.log("constructor function");
+    console.log("1: constructor function");
     this.state = {
       date: new Date().toISOString(),
     };
