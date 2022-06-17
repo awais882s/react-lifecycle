@@ -18,7 +18,7 @@ export default class MethodsInClass extends Component {
     });
   }
   componentDidUpdate() {
-    console.log("ComponentDidUpdate");
+    console.log("ComponentDidUpdate function");
 
   }
   render() {
