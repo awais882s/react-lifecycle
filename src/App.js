@@ -1,4 +1,4 @@
-import LifeCycle from "./Components/LifeCycle"
+import LifeCycle from "./Components/LifeCycle";
 function App() {
   return <div>
     <LifeCycle/>
