@@ -21,7 +21,6 @@ export default class MethodsInClass extends Component {
     console.log("ComponentDidUpdate");
 
   }
-
   render() {
     console.log("render function");
     const { date } = this.state;
