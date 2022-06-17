@@ -17,6 +17,12 @@ export default class MethodsInClass extends Component {
       date: new Date().toISOString(),
     });
   }
+  componentDidUpdate() {
+    console.log("ComponentDidUpdate");
+
+  }
+
+
   render() {
     console.log("render");
     const { date } = this.state;
