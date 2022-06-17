@@ -12,7 +12,7 @@ export default class MethodsInClass extends Component {
     console.log("componentWillMount");
   }
   componentDidMount() {
-    console.log("componentDidMount");
+    console.log("componentDidMount function");
     this.setState({
       date: new Date().toISOString(),
     });
