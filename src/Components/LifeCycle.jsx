@@ -27,6 +27,7 @@ export default class MethodsInClass extends Component {
     return <div>Text In Render component{date}</div>;
   }
 }
+
 // constructor
 // Componentwillmount
 // render
