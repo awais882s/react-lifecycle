@@ -12,6 +12,9 @@ export default function ChildHook({ date }) {
     }
   }, [])
   useEffect(() => {
+    console.log("child useEffect , change in props or state", date);
+  }, [date])
+  useEffect(() => {
     console.log("child useEffect >> componentDidUpdate");
   }, [])
 

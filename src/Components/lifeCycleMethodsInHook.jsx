@@ -17,11 +17,8 @@ export default function LifeCycleMethodsInHook() {
     }
   }, [])
   useEffect(() => {
-
     console.log("Parent useEffect >> componentDidUpdate");
-
-  }
-    , [])
+  }, [])
 
   console.log("render in hooks");
   return (
