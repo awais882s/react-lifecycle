@@ -22,7 +22,7 @@ export default class MethodsInClass extends Component {
   componentWillReceiveProps() {
     console.log("componentWillReceiveProps");
   }
-  componentDidCatch() {
+  componentDidCatch(error) {
     console.log("componentDidCatch");
   }
   componentDidUpdate() {
@@ -44,3 +44,7 @@ export default class MethodsInClass extends Component {
 // componentsDidUpdate
 // if state or props updating, methods will re render
 // render
+
+
+// sequence
+// constructor > componentwillmount > render > componentDidUpdate > ShouldComponentUpdate > render......
