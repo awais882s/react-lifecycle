@@ -19,6 +19,9 @@ export default class MethodsInClass extends Component {
   componentWillUnmount() {
     console.log("Components will Unmount");
   }
+  componentWillReceiveProps() {
+    console.log("component will recieve props");
+  }
   componentDidUpdate() {
     console.log("3: ComponentDidUpdate function");
   }
