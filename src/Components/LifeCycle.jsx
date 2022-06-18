@@ -12,9 +12,15 @@ export default class MethodsInClass extends Component {
   }
   componentDidMount() {
     console.log("componentDidMount");
-    this.setState({
-      date: new Date().toISOString(),
-    });
+    setInterval(() => {
+      console.log("setInerval ");
+    }, 3000);
+
+    setTimeout(() => {
+      console.log("setTimeout");
+      this.update()
+
+    }, 3000);
   }
   componentWillUnmount() {
     console.log("componentWillUnmount");
@@ -25,11 +31,17 @@ export default class MethodsInClass extends Component {
   componentDidCatch(error) {
     console.log("componentDidCatch");
   }
+  update = () => {
+    this.setState({
+      date: new Date().toISOString(),
+    });
+  }
   componentDidUpdate() {
     console.log("componentDidUpdate");
   }
   shouldComponentUpdate() {
     console.log("shouldComponentUpdate");
+    return true
   }
   render() {
     console.log("render");
