@@ -2,37 +2,37 @@ import React, { Component } from "react";
 export default class MethodsInClass extends Component {
   constructor(props) {
     super(props);
-    console.log("1: constructor function");
+    console.log("constructor");
     this.state = {
       date: new Date().toISOString(),
     };
   }
   componentWillMount() {
-    console.log("2: componentWillMount function");
+    console.log("componentWillMount");
   }
   componentDidMount() {
-    console.log("componentDidMount function");
+    console.log("componentDidMount");
     this.setState({
       date: new Date().toISOString(),
     });
   }
   componentWillUnmount() {
-    console.log("Components will Unmount");
+    console.log("componentWillUnmount");
   }
   componentWillReceiveProps() {
-    console.log("component will recieve props");
+    console.log("componentWillReceiveProps");
   }
   componentDidCatch() {
-    console.log("component did catch");
+    console.log("componentDidCatch");
   }
   componentDidUpdate() {
-    console.log("3: ComponentDidUpdate function");
+    console.log("componentDidUpdate");
   }
   shouldComponentUpdate() {
-    console.log("Should component update");
+    console.log("shouldComponentUpdate");
   }
   render() {
-    console.log("4: render function");
+    console.log("render");
     const { date } = this.state;
     return <div>Text In Render component: {date}</div>;
   }
