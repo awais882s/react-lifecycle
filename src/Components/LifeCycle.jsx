@@ -3,9 +3,9 @@ export default class MethodsInClass extends Component {
   constructor(props) {
     super(props);
     console.log("constructor");
-    this.state = {
-      date: new Date().toISOString(),
-    };
+    // this.state = {
+    //   date: new Date().toISOString(),
+    // };
   }
   componentWillMount() {
     console.log("componentWillMount");
@@ -33,8 +33,8 @@ export default class MethodsInClass extends Component {
   }
   render() {
     console.log("render");
-    const { date } = this.state;
-    return <div>Text In Render component: {date}</div>;
+    // const { date } = this.state;
+    return <div>Text In Render component:</div>;
   }
 }
 
