@@ -22,8 +22,14 @@ export default class MethodsInClass extends Component {
   componentWillReceiveProps() {
     console.log("component will recieve props");
   }
+  componentDidCatch() {
+    console.log("component did catch");
+  }
   componentDidUpdate() {
     console.log("3: ComponentDidUpdate function");
+  }
+  shouldComponentUpdate() {
+    console.log("Should component update");
   }
   render() {
     console.log("4: render function");
