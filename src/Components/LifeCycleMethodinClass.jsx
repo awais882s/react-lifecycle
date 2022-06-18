@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-export default class MethodsInClass extends Component {
+import ChildClassComponent from "./ChildClassComponent.jsx";
+export default class LifeCycleMethodsInClass extends Component {
   constructor(props) {
     super(props);
     console.log("parent constructor");
@@ -11,16 +12,16 @@ export default class MethodsInClass extends Component {
   }
   componentDidMount() {
     console.log("parent componentDidMount");
-    this.clearSetID = setInterval(() => {
-      console.log("setInerval");
-      this.update();
-    }, 1000);
+    // this.clearSetID = setInterval(() => {
+    //   console.log("setInerval");
+    //   this.update();
+    // }, 1000);
 
     // setTimeout(() => {
     //   console.log("setTimeout");
     //   clearInterval(this.clearSetID);
     //   this.update();
-    // }, 5000);
+    // }, 1000);
   }
   componentWillMount() {
     console.log("componentWillMount");
@@ -50,8 +51,9 @@ export default class MethodsInClass extends Component {
     const { date } = this.state;
     return (
       <h1>
-        <p>Time:{time} </p>
-        date:{date}
+        <p> Parent render Time:{time} </p>
+        Parent render date:{date} <br /> 
+        <ChildClassComponent date={date} />
       </h1>
     )
   }

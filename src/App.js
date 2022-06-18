@@ -1,7 +1,7 @@
-import LifeCycle from "./Components/LifeCycle";
+import LifeCycleMethodsInClass from "./Components/LifeCycleMethodinClass";
 function App() {
   return <div>
-    <LifeCycle/>
+    <LifeCycleMethodsInClass/>
   </div>;
 }
 export default App;
