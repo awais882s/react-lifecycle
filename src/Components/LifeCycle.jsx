@@ -2,7 +2,7 @@ import React, { Component } from "react";
 export default class MethodsInClass extends Component {
   constructor(props) {
     super(props);
-    console.log("constructor");
+    console.log("parent constructor");
     this.state = {
       time: new Date().toLocaleTimeString(),
       date: new Date().toLocaleDateString(),
@@ -10,7 +10,7 @@ export default class MethodsInClass extends Component {
     };
   }
   componentDidMount() {
-    console.log("componentDidMount");
+    console.log("parent componentDidMount");
     this.clearSetID = setInterval(() => {
       console.log("setInerval");
       this.update();
@@ -29,7 +29,7 @@ export default class MethodsInClass extends Component {
     console.log("componentWillUnmount");
   }
   componentDidCatch(error) {
-    console.log("componentDidCatch");
+    console.log("parent componentDidCatch");
   }
   update = () => {
     this.setState({
@@ -38,10 +38,10 @@ export default class MethodsInClass extends Component {
     });
   }
   componentDidUpdate() {
-    console.log("componentDidUpdate");
+    console.log("parent componentDidUpdate");
   }
   shouldComponentUpdate() {
-    console.log("shouldComponentUpdate");
+    console.log("parent shouldComponentUpdate");
     return true
   }
   render() {
