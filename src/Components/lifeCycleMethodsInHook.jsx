@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import LifeCycleInHooksChild from './ChildHook';
+import LifeCycleInHooksChild from './ChildHooks';
 
 
 export default function LifeCycleMethodsInHook() {
@@ -8,14 +8,20 @@ export default function LifeCycleMethodsInHook() {
     setInterval(() => {
       setDate(new Date().toLocaleTimeString())
     }, 1000);
-    console.log("UseEffect >>>componentDidMount");
+    console.log("Parent UseEffect >>>componentDidMount");
 
   }, [])
   useEffect(() => {
     return () => {
-      console.log("UseEffect >>>componentDidUnMount");
+      console.log("Parent UseEffect >>>componentDidUnMount");
     }
   }, [])
+  useEffect(() => {
+
+    console.log("Parent useEffect >> componentDidUpdate");
+
+  }
+    , [])
 
   console.log("render in hooks");
   return (
