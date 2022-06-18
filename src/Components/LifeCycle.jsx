@@ -16,6 +16,9 @@ export default class MethodsInClass extends Component {
       date: new Date().toISOString(),
     });
   }
+  componentWillUnmount() {
+    console.log("Components will Unmount");
+  }
   componentDidUpdate() {
     console.log("3: ComponentDidUpdate function");
   }
@@ -25,6 +28,7 @@ export default class MethodsInClass extends Component {
     return <div>Text In Render component: {date}</div>;
   }
 }
+
 // constructor
 // Componentwillmount
 // render
