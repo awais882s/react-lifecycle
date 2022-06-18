@@ -3,30 +3,29 @@ export default class MethodsInClass extends Component {
   constructor(props) {
     super(props);
     console.log("constructor");
-    // this.state = {
-    //   date: new Date().toISOString(),
-    // };
+    this.state = {
+      date: new Date().toISOString(),
+    };
   }
   componentWillMount() {
     console.log("componentWillMount");
   }
   componentDidMount() {
     console.log("componentDidMount");
+    this.setState({
+      date: new Date().toISOString()
+    });
     setInterval(() => {
-      console.log("setInerval ");
-    }, 3000);
+      console.log("setInerval");
+    });
 
     setTimeout(() => {
       console.log("setTimeout");
-      this.update()
-
-    }, 3000);
+      this.update();
+    });
   }
   componentWillUnmount() {
     console.log("componentWillUnmount");
-  }
-  componentWillReceiveProps() {
-    console.log("componentWillReceiveProps");
   }
   componentDidCatch(error) {
     console.log("componentDidCatch");
@@ -46,10 +45,11 @@ export default class MethodsInClass extends Component {
   render() {
     console.log("render");
     // const { date } = this.state;
-    return <div>Text In Render component:</div>;
+    return (
+      <div>Text In Render component:</div>
+    )
   }
 }
-
 // constructor
 // Componentwillmount
 // render
@@ -59,4 +59,4 @@ export default class MethodsInClass extends Component {
 
 
 // sequence
-// constructor > componentwillmount > render > componentDidUpdate > ShouldComponentUpdate > render......
+// constructor > componentwillmount > render > componentDidUpdate > ShouldComponentUpdate > render.....
