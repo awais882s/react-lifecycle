@@ -40,8 +40,8 @@ shouldComponentUpdate() {
 }
 render() {
     console.log("render");
-    const { time } = this.props;
-    const { date } = this.props;
+    // const { time } = this.props;
+    // const { date } = this.props;
     return (
         <>
             Child in Render Method

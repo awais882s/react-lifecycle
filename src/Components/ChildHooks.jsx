@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect } from 'react'
 
 
-export default function ChildHook({ date }) {
+export default function ChildHook({ date, something }) {
   useEffect(() => {
     console.log("child UseEffect >>>componentDidMount");
 
@@ -13,7 +13,7 @@ export default function ChildHook({ date }) {
   }, [])
   useEffect(() => {
     console.log("child useEffect , change in props or state", date);
-  }, [date])
+  }, [date, something])
   useEffect(() => {
     console.log("child useEffect >> componentDidUpdate");
   }, [])
