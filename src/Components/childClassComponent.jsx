@@ -6,7 +6,7 @@ export default class ChildClassComponent extends Component {
 
     }
     componentDidMount() {
-        console.log("child componentDidMount");
+        // console.log("child componentDidMount");
         // this.clearSetID = setInterval(() => {
         //     console.log("setInerval");
         //     this.update();
@@ -14,16 +14,16 @@ export default class ChildClassComponent extends Component {
     }
 
 componentWillMount() {
-    console.log("componentWillMount");
+    // console.log("componentWillMount");
 }
 componentWillUnmount() {
-    console.log("componentWillUnmount");
+    // console.log("componentWillUnmount");
 }
 componentWillReceiveProps(props) {
     console.log("child componets will recieve", props);
 }
 componentDidCatch(error) {
-    console.log("child componentDidCatch");
+    // console.log("child componentDidCatch");
 }
 update = () => {
     this.setState({
@@ -32,10 +32,10 @@ update = () => {
     });
 }
 componentDidUpdate() {
-    console.log("child componentDidUpdate");
+    // console.log("child componentDidUpdate");
 }
 shouldComponentUpdate() {
-    console.log("child shouldComponentUpdate");
+    // console.log("child shouldComponentUpdate");
     return true
 }
 render() {

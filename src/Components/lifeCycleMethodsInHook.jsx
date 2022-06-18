@@ -8,19 +8,19 @@ export default function LifeCycleMethodsInHook() {
     setInterval(() => {
       setDate(new Date().toLocaleTimeString())
     }, 1000);
-    console.log("Parent UseEffect >>>componentDidMount");
+    // console.log("Parent UseEffect >>>componentDidMount");
 
   }, [])
   useEffect(() => {
     return () => {
-      console.log("Parent UseEffect >>>componentDidUnMount");
+      // console.log("Parent UseEffect >>>componentDidUnMount");
     }
   }, [])
   useEffect(() => {
-    console.log("Parent useEffect >> componentDidUpdate");
+    // console.log("Parent useEffect >> componentDidUpdate");
   }, [])
 
-  console.log("render in hooks");
+  // console.log("render in hooks");
   return (
     <div>Date in Hook:<p></p> {date}
       <LifeCycleInHooksChild date={date} />

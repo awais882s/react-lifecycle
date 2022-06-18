@@ -11,9 +11,9 @@ export default class LifeCycleMethodsInClass extends Component {
     };
   }
   componentDidMount() {
-    console.log("parent componentDidMount");
+    // console.log("parent componentDidMount");
     this.clearSetID = setInterval(() => {
-      console.log("setInerval");
+      // console.log("setInerval");
       this.update();
     }, 5000);
 
@@ -24,13 +24,13 @@ export default class LifeCycleMethodsInClass extends Component {
     // }, 1000);
   }
   componentWillMount() {
-    console.log("parentcomponentWillMount");
+    // console.log("parentcomponentWillMount");
   }
   componentWillUnmount() {
-    console.log("parentcomponentWillUnmount");
+    // console.log("parentcomponentWillUnmount");
   }
   componentDidCatch(error) {
-    console.log("parent componentDidCatch");
+    // console.log("parent componentDidCatch");
   }
   update = () => {
     this.setState({
@@ -39,10 +39,10 @@ export default class LifeCycleMethodsInClass extends Component {
     });
   }
   componentDidUpdate() {
-    console.log("parent componentDidUpdate");
+    // console.log("parent componentDidUpdate");
   }
   shouldComponentUpdate() {
-    console.log("parent shouldComponentUpdate");
+    // console.log("parent shouldComponentUpdate");
     return true
   }
   render() {
