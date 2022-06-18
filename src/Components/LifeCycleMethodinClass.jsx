@@ -12,10 +12,10 @@ export default class LifeCycleMethodsInClass extends Component {
   }
   componentDidMount() {
     console.log("parent componentDidMount");
-    // this.clearSetID = setInterval(() => {
-    //   console.log("setInerval");
-    //   this.update();
-    // }, 1000);
+    this.clearSetID = setInterval(() => {
+      console.log("setInerval");
+      this.update();
+    }, 5000);
 
     // setTimeout(() => {
     //   console.log("setTimeout");
@@ -24,10 +24,10 @@ export default class LifeCycleMethodsInClass extends Component {
     // }, 1000);
   }
   componentWillMount() {
-    console.log("componentWillMount");
+    console.log("parentcomponentWillMount");
   }
   componentWillUnmount() {
-    console.log("componentWillUnmount");
+    console.log("parentcomponentWillUnmount");
   }
   componentDidCatch(error) {
     console.log("parent componentDidCatch");
@@ -52,7 +52,7 @@ export default class LifeCycleMethodsInClass extends Component {
     return (
       <h1>
         <p> Parent render Time:{time} </p>
-        Parent render date:{date} <br /> 
+        Parent render date:{date} <br />
         <ChildClassComponent date={date} />
       </h1>
     )
