@@ -4,25 +4,26 @@ export default class MethodsInClass extends Component {
     super(props);
     console.log("constructor");
     this.state = {
-      date: new Date().toISOString(),
+      time: new Date().toLocaleTimeString(),
+      date: new Date().toLocaleDateString(),
+
     };
-  }
-  componentWillMount() {
-    console.log("componentWillMount");
   }
   componentDidMount() {
     console.log("componentDidMount");
-    this.setState({
-      date: new Date().toISOString()
-    });
-    setInterval(() => {
+    this.clearSetID = setInterval(() => {
       console.log("setInerval");
-    });
-
-    setTimeout(() => {
-      console.log("setTimeout");
       this.update();
-    });
+    }, 1000);
+
+    // setTimeout(() => {
+    //   console.log("setTimeout");
+    //   clearInterval(this.clearSetID);
+    //   this.update();
+    // }, 5000);
+  }
+  componentWillMount() {
+    console.log("componentWillMount");
   }
   componentWillUnmount() {
     console.log("componentWillUnmount");
@@ -32,7 +33,8 @@ export default class MethodsInClass extends Component {
   }
   update = () => {
     this.setState({
-      date: new Date().toISOString(),
+      time: new Date().toLocaleTimeString(),
+      date: new Date().toLocaleDateString(),
     });
   }
   componentDidUpdate() {
@@ -44,9 +46,13 @@ export default class MethodsInClass extends Component {
   }
   render() {
     console.log("render");
-    // const { date } = this.state;
+    const { time } = this.state;
+    const { date } = this.state;
     return (
-      <div>Text In Render component:</div>
+      <h1>
+        <p>Time:{time} </p>
+        date:{date}
+      </h1>
     )
   }
 }
