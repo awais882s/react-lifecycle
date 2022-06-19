@@ -10,8 +10,12 @@ export default function Products(params) {
             {
                 products.map((product, index) => {
                     return <p>
-                        No.#{index} - Product Name:{product.Productname}<br />
+                        No.#{index} - Product Name:{product.title}<br />
                         Price {product.price}
+                        <p>
+                            <img src={product.image} alt={product.name} style={{ width: 50 }} />
+                        </p>
+                        <hr />
                     </p>
                 })
             }

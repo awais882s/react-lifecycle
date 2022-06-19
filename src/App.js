@@ -3,15 +3,16 @@
 import DashBoard from "./Components/DashBoard/dashBoard";
 import LifeCycleMethodsInHook from "./Components/lifeCycleMethodsInHook";
 import Products from "./Components/products/products";
+import "./App.css";
 
 function App() {
   return (
-    <div>
+    <div className="App">
       {/* <LifeCycleMethodsInClass />
       <ChildClassComponent /> */}
       <LifeCycleMethodsInHook />
       <DashBoard />
-      <hr/>
+      <hr />
       <Products />
     </div>
   );

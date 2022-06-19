@@ -1,23 +1,18 @@
 import React, { useState, useEffect } from 'react'
+// import { apiFetchProducts } from './api';
 export default function useFetchBoard() {
     // logics
-    const [products, setProducts] = useState([
-        {
-            Productname: "car ",
-            price: "$ 1234"
-        },
-        {
-            Productname: "bike",
-            price: "$ 1237"
-        },
-        {
-            Productname: "i phone 13 pro max ",
-            price: "$ 1934"
-        }
-    ])
+    const [products, setProducts] = useState([])
     // end of logic
+    async function apiFetchProducts() {
+        let productsRes = await fetch('https://fakestoreapi.com/products')
+        let products = await productsRes.json()
+        setProducts(products);
+        console.log("Products", products);
+    }
     useEffect(() => {
-        console.log("products");
+        apiFetchProducts()
+
     }, [])
 
     // logics return
