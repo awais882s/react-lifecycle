@@ -1,8 +1,15 @@
 .App {
   text-align: center;
   user-select: none;
+  justify-content: center;
+  align-items: center;
 }
-
+.p {
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

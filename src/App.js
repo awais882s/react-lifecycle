@@ -11,8 +11,8 @@ function App() {
       {/* <LifeCycleMethodsInClass />
       <ChildClassComponent /> */}
       <Products />
-      <LifeCycleMethodsInHook />
-      <DashBoard />
+      {/* <LifeCycleMethodsInHook />
+      <DashBoard /> */}
     </div>
   );
 }

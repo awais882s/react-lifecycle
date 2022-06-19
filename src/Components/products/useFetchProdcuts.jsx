@@ -20,7 +20,7 @@ export default function useFetchBoard() {
     async function apiFetchProducts() {
         try {
             setLoading(true)
-            let products = await axios.get('https://api.escuelajs.co/api/v1/products')
+            let products = await axios.get('https://api.escuelajs.co/api/v1/categories')
             console.log(products.data);
             setProducts(products.data);
         }
