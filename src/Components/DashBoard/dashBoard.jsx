@@ -6,6 +6,7 @@ export default function DashBoard() {
     // start of views / user views
     return (
         <div>
+            <h1>Student Data</h1>
             {
                 students.map((student, index) => {
                     return <p>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 export default function useFetchBoard() {
     // logics
     const [students, setStudents] = useState([
@@ -16,7 +16,11 @@ export default function useFetchBoard() {
         }
     ])
     // end of logic
-    // start of views / user views
+    useEffect(() => {
+        console.log("name");
+    }, [])
+
+    // logics return
     return (
         [students, setStudents]
     );
