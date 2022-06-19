@@ -21,7 +21,7 @@ export default function useFetchBoard() {
         try {
             setLoading(true)
             let products = await axios.get('https://fakestoreapi.com/products')
-            console.log(products.data);
+            // console.log(products.data);
             setProducts(products.data);
         }
         catch (err) {
