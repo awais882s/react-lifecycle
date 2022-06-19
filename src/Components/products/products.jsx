@@ -33,7 +33,7 @@ export default function Products(params) {
                     return <p>
                         Title:{product.title}
                         <p>
-                            <img src={product.image} alt={product.category} style={{ width: 80 }} />
+                            <img src={product.images} alt={product.category} style={{ width: 200 }} />
                         </p>
                         No.#{index} <br />
                         Price {product.price}
