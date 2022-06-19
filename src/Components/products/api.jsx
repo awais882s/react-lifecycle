@@ -1,7 +1,7 @@
-import React from 'react'
+// import React from 'react'
 
-export async function apiFetchProducts() {
-    return (
-        fetch('https://fakestoreapi.com/products')
-    )
-}
+// export async function apiFetchProducts() {
+//     return (
+//         fetch('https://fakestoreapi.com/products')
+//     )
+// }
