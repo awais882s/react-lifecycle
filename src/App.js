@@ -10,10 +10,9 @@ function App() {
     <div className="App">
       {/* <LifeCycleMethodsInClass />
       <ChildClassComponent /> */}
+      <Products />
       <LifeCycleMethodsInHook />
       <DashBoard />
-      <hr />
-      <Products />
     </div>
   );
 }
