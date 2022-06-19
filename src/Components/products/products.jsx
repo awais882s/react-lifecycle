@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import useFetchBoard from "../products/useFetchProdcuts.jsx";
 // import Instagram from 'react-content-loader';
-import Button from '@mui/material/Button';
 import DataGrid from "@mui/material/LinearProgress";
 export default function Products(params) {
     // logics
