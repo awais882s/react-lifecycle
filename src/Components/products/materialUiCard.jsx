@@ -4,6 +4,8 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
+import Pagination from '@mui/material/Pagination';
+import { TableCell } from '@mui/material';
 
 import useFetchBoard from "../products/useFetchProdcuts.jsx";
 import DataGrid from "@mui/material/LinearProgress";
@@ -49,6 +51,11 @@ export default function Cards() {
                 }
                 )
             }
+            <div style={{ display: 'flex', alignItems: "center", justifyContent: "center" }} >
+                <Pagination count={10} color="primary" />
+
+            </div>
+
         </>
     )
 }
