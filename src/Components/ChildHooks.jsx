@@ -14,7 +14,6 @@ export default function ChildHook({ date, something }) {
   useEffect(() => {
     // console.log("child useEffect >> componentDidUpdate");
   }, [])
-
   // console.log("render in hooks");
   return (
     <div>Date in Child Hooks:{date}
