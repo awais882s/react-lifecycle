@@ -3,7 +3,6 @@ export default class ChildClassComponent extends Component {
     constructor(props) {
         super(props);
         console.log("child constructor");
-
     }
     componentDidMount() {
         // console.log("child componentDidMount");
