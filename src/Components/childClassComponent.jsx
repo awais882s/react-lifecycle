@@ -11,7 +11,6 @@ export default class ChildClassComponent extends Component {
         //     this.update();
         // }, 1000);
     }
-
 componentWillMount() {
     // console.log("componentWillMount");
 }
