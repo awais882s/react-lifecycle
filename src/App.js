@@ -12,7 +12,7 @@ function App() {
       <Products />
       {/* <LifeCycleMethodsInHook />
       <DashBoard /> */}
-    </div>
+    </div> 
   );
 }
 export default App;
