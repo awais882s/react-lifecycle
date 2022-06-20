@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import LifeCycleInHooksChild from './ChildHooks';
-
-
 export default function LifeCycleMethodsInHook() {
   const [date, setDate] = useState(new Date().toLocaleTimeString());
   useEffect(() => {
