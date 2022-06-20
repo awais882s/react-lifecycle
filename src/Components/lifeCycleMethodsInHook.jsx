@@ -9,7 +9,6 @@ export default function LifeCycleMethodsInHook() {
       setDate(new Date().toLocaleTimeString())
     }, 1000);
     // console.log("Parent UseEffect >>>componentDidMount");
-
   }, [])
   useEffect(() => {
     return () => {
