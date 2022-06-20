@@ -1,6 +1,5 @@
 # Getting Started with Create React App
 # Muhammd Awais React Developer 
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
