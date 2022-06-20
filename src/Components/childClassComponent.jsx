@@ -44,7 +44,6 @@ render() {
     return (
         <>
             Child in Render Method
-
         </>
     )
 }
