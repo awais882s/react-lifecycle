@@ -54,7 +54,5 @@ render() {
 // componentsDidUpdate
 // if state or props updating, methods will re render
 // render
-
-
 // sequence
 // constructor > componentwillmount > render > componentDidUpdate > ShouldComponentUpdate > render.....
