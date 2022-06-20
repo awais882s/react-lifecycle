@@ -7,7 +7,6 @@ export default class LifeCycleMethodsInClass extends Component {
     this.state = {
       time: new Date().toLocaleTimeString(),
       date: new Date().toLocaleDateString(),
-
     };
   }
   componentDidMount() {
