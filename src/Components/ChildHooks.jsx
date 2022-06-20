@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 
-
 export default function ChildHook({ date, something }) {
   useEffect(() => {
     // console.log("child UseEffect >>>componentDidMount");
