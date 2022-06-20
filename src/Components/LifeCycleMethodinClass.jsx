@@ -15,7 +15,6 @@ export default class LifeCycleMethodsInClass extends Component {
       // console.log("setInerval");
       this.update();
     }, 5000);
-
     // setTimeout(() => {
     //   console.log("setTimeout");
     //   clearInterval(this.clearSetID);
